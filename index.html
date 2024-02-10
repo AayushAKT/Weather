@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/4101ac0be1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/drizzle.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="text" placeholder="enter city name" id="searchCity">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="weather-display">
+            <img src="images/clouds.png" alt="" class="weather-image">
+            <h2 class="temperature">22°C</h2>
+            <h2 id="cityName" class="cityName">New York</h2>
+            <h2 class="weather-type">Clear</h2>
+        </div>
+        <div class="extras-display">
+            <div class="humidity-display">
+                <img src="images/humidity.png" alt="" class="humidity-icon">
+                <div class="humidity-details">
+                    <h2 class="humidity">50%</h2>
+                    <h2>Humidity</h2>
+                </div>
+            </div>
+
+            <div class="windSpeed-display">
+                <img src="images/wind.png" alt="" class="windSpeed-icon">
+                <div class="windSpeed-details">
+                    <h2 class="windSpeed">15 km/h</h2>
+                    <h2>Wind Speed</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
