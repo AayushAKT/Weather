@@ -4,7 +4,7 @@ let image = document.querySelector('.weather-image');
 let weatherType = document.querySelector('.weather-type');
 
 
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?appid=3f662cadb9f71a5054c2a182f3765320&units=metric&q="
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?appid=(apiKey)&units=metric&q="
 
 async function getWeather(city){
     const response = await fetch(apiUrl + city);
