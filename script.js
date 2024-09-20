@@ -12,6 +12,9 @@ async function getWeather(city){
 
     console.log(data);
 
+    if(data.cod == 404)
+        alert("Invalid city name!")
+
      document.querySelector('.temperature').innerHTML = Math.round(data.main.temp) + '°C'
      document.querySelector('.cityName').innerHTML = data.name;
      document.querySelector('.humidity').innerHTML = data.main.humidity + '%';
